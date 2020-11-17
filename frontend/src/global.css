@@ -1,0 +1,38 @@
+* {
+  box-sizing: border-box;
+}
+
+:root {
+  --primary: #3e7baa;
+  --text-primary:#5c5858;
+  --bg-nav: #0f3c5f;
+  --bg-body: #e0def3;
+  --color-line-in-white: #c3c3ca;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+body, input, button, textarea {
+  font: 600 16px Nunito, sans-serif;
+}
+
+body {
+  background-color: var(--bg-body);
+}
+
+#basic-structure {
+  display: flex;
+  min-height: 100vh;
+}
+
+#basic-structure main {
+  flex: 1;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
