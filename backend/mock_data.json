@@ -4,7 +4,7 @@
       "id": 1,
       "name": "Arroz",
       "photo": "url",
-      "price": 25,
+      "price": 52,
       "value": "Arroz",
       "label": "Arroz"
     },
@@ -12,7 +12,7 @@
       "id": 2,
       "name": "Feijão",
       "photo": "url",
-      "price": 25,
+      "price": 21.25,
       "value": "Feijão",
       "label": "Feijão"
     },
@@ -20,7 +20,7 @@
       "id": 3,
       "name": "Bife",
       "photo": "url",
-      "price": 25,
+      "price": 35,
       "value": "Bife",
       "label": "Bife"
     },
@@ -59,7 +59,7 @@
       "id": 1
     },
     {
-      "id": "5f9114f1-2d5b-4f94-8e5c-eb2ae8f000ba",
+      "id": 2,
       "saleDate": "2020-11-05",
       "waiter": "zé",
       "tip": "15",
@@ -81,7 +81,7 @@
       ]
     },
     {
-      "id": "dfa4eee4-d6df-492d-b39f-bf886dd29316",
+      "id": 3,
       "saleDate": "2020-11-28",
       "waiter": "",
       "tip": "",
@@ -97,7 +97,7 @@
       ]
     },
     {
-      "id": "6f0a91d3-3b63-4d43-997f-b93ae2a432c7",
+      "id": 4,
       "saleDate": "2020-11-28",
       "waiter": "",
       "tip": "",
@@ -113,7 +113,7 @@
       ]
     },
     {
-      "id": "0d20be26-6f47-40df-b489-f88cfeaf293a",
+      "id": 5,
       "saleDate": "2020-11-28",
       "waiter": "",
       "tip": "30",
@@ -128,5 +128,6 @@
         }
       ]
     }
-  ]
+  ],
+  "waiters": []
 }

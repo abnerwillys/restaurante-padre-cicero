@@ -14,12 +14,12 @@ import { Wrapper } from './styles';
 function SaleCreate() {
   const [allProducts, setAllProducts] = useState([]);
 
-  const [saleDate, setSaleDate] = useState('');
+  const [sale_date, setSaleDate] = useState('');
   const [waiter, setWaiter] = useState('');
   const [tip, setTip] = useState('');
 
   const [customer, setCustomer] = useState('');
-  const [totalPrice, setTotalPrice] = useState('');
+  const [total_price, setTotalPrice] = useState('');
 
   const [productItems, setProductItems] = useState([
     { product_name: '', quantity: 1, unit_price: '', calculated_price: '' },
@@ -128,11 +128,11 @@ function SaleCreate() {
     e.preventDefault();
 
     const formaData = {
-      saleDate,
+      saleDate: sale_date,
       waiter,
       tip,
       customer,
-      totalPrice,
+      totalPrice: total_price,
       productItems
     }
 
@@ -162,7 +162,7 @@ function SaleCreate() {
                   name="date"
                   type="date"
                   label="Data da venda:"
-                  value={saleDate}
+                  value={sale_date}
                   onChange={(e) => {setSaleDate(e.target.value);}}
                   required
                 />
@@ -244,7 +244,7 @@ function SaleCreate() {
                   name="total_price"
                   label="Total (R$):"
                   disabled
-                  value={totalPrice}
+                  value={total_price}
                 />
               </div>
             </fieldset>

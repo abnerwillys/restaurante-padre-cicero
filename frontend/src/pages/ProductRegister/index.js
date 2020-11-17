@@ -10,12 +10,12 @@ import { Wrapper } from './styles';
 function ProductRegister() {
   const [name, setName] = useState('');
   const [price, setPrice] = useState('');
-  const [photoUrl, setPhotoUrl] = useState('');
+  const [photo_url, setPhotoUrl] = useState('');
 
   function handleCreateProduct(e) {
     e.preventDefault();
 
-    const isFieldsFilled = name !== '' && price !== '' && photoUrl !== '';
+    const isFieldsFilled = name !== '' && price !== '' && photo_url !== '';
 
     if (!isFieldsFilled) {
       alert('Por favor preencha todos os campos!');
@@ -25,7 +25,7 @@ function ProductRegister() {
     console.log({
       name,
       price,
-      photoUrl,
+      photo_url,
     });
   }
 
@@ -56,7 +56,7 @@ function ProductRegister() {
                 name="photo"
                 label="Foto do produto (URL):"
                 type="url"
-                value={photoUrl}
+                value={photo_url}
                 onChange={(e) => {setPhotoUrl(e.target.value);}}
               />
             </fieldset>
