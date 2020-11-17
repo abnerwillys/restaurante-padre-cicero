@@ -73,10 +73,13 @@ Este projeto foi realizado como desafio técnico para a empresa **TON Stone**.
  - [x] 💯 Implementado *paginação, ordenação, filtro* na tabela de histórico de Vendas;
  - [x] 💯 Implementação de um *Spinner* para melhor experiencia do usuário;
  
-##### 👉 Novas implementações/features a serem realizadas:
+##### 👉 Novas implementações/features a serem realizadas(sem ordem definida):
  - [ ] 👨‍💻 Implementação de modal mostrando os produtos da venda(Tela Histórico de Vendas);
+ - [ ] Implementar SideBar personalizada(que recolhe apenas mostrando ícones);
+ - [ ] 👨‍💻 Melhorar responsividade da aplicação;
  - [ ] 👨‍💻 Finalizar CRUD de *produtos*(PUT/DELETE);
  - [ ] 👨‍💻 Finalizar CRUD de *vendas*(PUT/DELETE);
+ - [ ] 
  - [ ] 👨‍💻 Implementação de Temas;
  - [ ] 👨‍💻 Implementação de CRUD de *clientes*;
  - [ ] 👨‍💻 Implementação de CRUD de *colaboradores*;
