@@ -72,7 +72,7 @@ Este projeto foi realizado como desafio técnico para a empresa **TON Stone**.
  - [x] 💯 Configuração do gerenciamento de estado;
  - [ ] 👨‍💻 Implementar HTTP PUT e HTTP DELETE (opcional);
  - [ ] 👨‍💻 Implementar cadastro de funcionários/garçons (opcional);
- - [ ] 👨‍💻 Implementar sistema de login/usuários (opcional);
+ - [ ] 👨‍💻 Implementar sistema de login/usuários(já iniciado as configurações na API) (opcional);
 
 ---
 ### 🛠 Tecnologias utilizadas
