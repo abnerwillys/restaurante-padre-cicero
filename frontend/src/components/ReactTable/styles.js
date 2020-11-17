@@ -6,6 +6,16 @@ export const Wrapper = styled.div`
   font-size: 16px;
   margin-bottom: 30px;
 
+  div.flex {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 100%;
+    height: 100%;
+    padding: 20px;
+  }
+
   div.container {
     background-color: #FFF;
     padding: 20px;

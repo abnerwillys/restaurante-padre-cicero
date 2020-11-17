@@ -35,6 +35,12 @@ const Navbar = ({ activeLink }) => {
             >
               Cadastrar
             </Link>
+            <Link
+              className={activeLink === 'products-list' ? 'active' : ''}
+              to="/products-list"
+            >
+              Lista
+            </Link>
           </div>
 
           <div className="sales">
