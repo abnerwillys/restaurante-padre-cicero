@@ -70,9 +70,18 @@ Este projeto foi realizado como desafio técnico para a empresa **TON Stone**.
  - [x] 💯 Construção da API Rest com Node.js / MongoDb;
  - [x] 💯 Implementação da regra de negócio;
  - [x] 💯 Configuração do gerenciamento de estado;
- - [ ] 👨‍💻 Implementar HTTP PUT e HTTP DELETE (opcional);
- - [ ] 👨‍💻 Implementar cadastro de funcionários/garçons (opcional);
- - [ ] 👨‍💻 Implementar sistema de login/usuários(já iniciado as configurações na API) (opcional);
+ - [x] 💯 Implementado *paginação, ordenação, filtro* na tabela de histórico de Vendas;
+ - [x] 💯 Implementação de um *Spinner* para melhor experiencia do usuário;
+ 
+##### 👉 Novas implementações/features a serem realizadas:
+ - [ ] 👨‍💻 Implementação de modal mostrando os produtos da venda(Tela Histórico de Vendas);
+ - [ ] 👨‍💻 Finalizar CRUD de *produtos*(PUT/DELETE);
+ - [ ] 👨‍💻 Finalizar CRUD de *vendas*(PUT/DELETE);
+ - [ ] 👨‍💻 Implementação de Temas;
+ - [ ] 👨‍💻 Implementação de CRUD de *clientes*;
+ - [ ] 👨‍💻 Implementação de CRUD de *colaboradores*;
+   - [ ] 👨‍💻 Tela de histórico de ganhos com gorjeta do garçom/colaborador;
+ - [ ] 👨‍💻 Implementação sistema de login/usuários(já iniciado na API) ;
 
 ---
 ### 🛠 Tecnologias utilizadas
