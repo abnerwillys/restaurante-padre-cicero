@@ -27,7 +27,7 @@ const SaleSchema = new mongoose.Schema({
       quantity: { type: Number, required: true },
       unit_price: { type: Number, required: true },
       calculated_price: { type: Number, required: true },
-    },
+    }
   ],
   createdAt: {
     type: Date,

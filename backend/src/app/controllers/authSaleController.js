@@ -3,6 +3,16 @@ const Sale = require('../models/Sale');
 
 const router = express.Router();
 
+router.get('/sales', async (req, res) => {
+  try {
+    const allSales = await Sale.find({});
+
+    return res.send({ allSales });
+  } catch (err) {
+    return res.status(400).send({ error: 'Error detected!', err, });
+  }
+});
+
 router.post('/sales', async (req, res) => {
   try {
     const sale = await Sale.create(req.body);
@@ -13,13 +23,14 @@ router.post('/sales', async (req, res) => {
   }
 });
 
-router.get('/sales', async (req, res) => {
+router.delete('/sales', async (req, res) => {
+  const { id } = req.body
   try {
-    const allSales = await Sale.find({});
+    await Sale.deleteOne({ _id: id });
 
-    return res.send({ allSales });
+    return res.send({ success: 'Sale deleted successfully!' });
   } catch (err) {
-    return res.status(400).send({ error: 'Error detected!', err, });
+    return res.status(400).send({ error: 'Error in delete sale!', err, });
   }
 });
 

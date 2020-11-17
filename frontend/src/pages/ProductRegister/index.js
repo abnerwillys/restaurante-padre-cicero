@@ -1,3 +1,4 @@
+import { useStoreActions } from 'easy-peasy';
 import React, { useState } from 'react';
 
 import Button from '../../components/Button';
@@ -8,6 +9,8 @@ import Navbar from '../../components/Navbar';
 import { Wrapper } from './styles';
 
 function ProductRegister() {
+  const saveNewProduct = useStoreActions(actions => actions.product.saveNewProduct)
+
   const [name, setName] = useState('');
   const [price, setPrice] = useState('');
   const [photo_url, setPhotoUrl] = useState('');
@@ -22,11 +25,13 @@ function ProductRegister() {
       return;
     }
 
-    console.log({
+    const newProduct = {
       name,
       price,
       photo_url,
-    });
+    }
+
+    saveNewProduct(newProduct)
   }
 
   return (
@@ -49,6 +54,7 @@ function ProductRegister() {
                 name="price"
                 label="Preço (R$):"
                 type="number"
+                min="0"
                 value={price}
                 onChange={(e) => {setPrice(e.target.value);}}
               />

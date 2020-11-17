@@ -1,4 +1,5 @@
-import React, { useMemo } from 'react';
+import React, { useEffect, useMemo } from 'react';
+import { useStoreActions, useStoreState } from 'easy-peasy';
 
 import {
   useTable,
@@ -7,17 +8,23 @@ import {
   usePagination,
 } from 'react-table';
 import { COLUMNS } from './columns';
-import MOCK_DATA from '../../services/mock_data.json';
 
-import { FiArrowDown, FiArrowUp, FiMenu } from 'react-icons/fi';
+import { FiArrowDown, FiArrowUp, FiEye, FiMenu } from 'react-icons/fi';
 import GlobalFilter from '../GlobalFilter';
 import Pagination from './Pagination';
 
 import { Wrapper } from './styles';
 
 function ReactTable() {
+  const sales = useStoreState((state) => state.sale.sales);
+  const getAllSales = useStoreActions((actions) => actions.sale.getAllSales);
+
+  useEffect(() => {
+    getAllSales()
+  }, [])
+
   const columns = useMemo(() => COLUMNS, []);
-  const data = useMemo(() => MOCK_DATA, []);
+  const data = useMemo(() => sales, []);
 
   const {
     getTableProps,
@@ -60,6 +67,10 @@ function ReactTable() {
     pageSize,
   };
 
+  function handleClickProduct() {
+    alert('Feature em estado de implementação!')
+  }
+
   return (
     <Wrapper>
       <div className="container">
@@ -67,10 +78,10 @@ function ReactTable() {
 
         <table {...getTableProps()}>
           <thead>
-            {headerGroups.map((headerGroup) => (
-              <tr {...headerGroup.getHeaderGroupProps()}>
-                {headerGroup.headers.map((column) => (
-                  <th {...column.getHeaderProps(column.getSortByToggleProps())}>
+            {headerGroups.map((headerGroup, index) => (
+              <tr key={index} {...headerGroup.getHeaderGroupProps()}>
+                {headerGroup.headers.map((column, index) => (
+                  <th key={index} {...column.getHeaderProps(column.getSortByToggleProps())}>
                     {column.render('Header')}
                     <span className="icon">
                       {column.isSorted ? (
@@ -85,19 +96,23 @@ function ReactTable() {
                     </span>
                   </th>
                 ))}
+                <th>Produtos</th>
               </tr>
             ))}
           </thead>
           <tbody {...getTableBodyProps()}>
-            {page.map((row) => {
+            {page.map((row, index) => {
               prepareRow(row);
               return (
-                <tr {...row.getRowProps()}>
-                  {row.cells.map((cell) => {
+                <tr key={index} {...row.getRowProps()}>
+                  {row.cells.map((cell, index) => {
                     return (
-                      <td {...cell.getCellProps()}>{cell.render('Cell')}</td>
+                      <td key={index} {...cell.getCellProps()}>{cell.render('Cell')}</td>
                     );
                   })}
+                    <td onClick={handleClickProduct}>
+                      <FiEye size={18} />
+                    </td>
                 </tr>
               );
             })}

@@ -3,7 +3,7 @@ import { format } from 'date-fns';
 export const COLUMNS = [
   {
     Header: 'Data',
-    accessor: 'saleDate',
+    accessor: 'sale_date',
     Cell: ({value}) => { return format(new Date(value), 'dd/MM/yyyy')},
   },
   {
@@ -23,6 +23,7 @@ export const COLUMNS = [
   },
   {
     Header: 'Total R$',
-    accessor: 'totalPrice',
+    accessor: 'total_price',
+    Cell: ({value}) => { return value.toLocaleString('pt-BR', { style: 'currency', currency: 'BRL', })}
   },
 ];

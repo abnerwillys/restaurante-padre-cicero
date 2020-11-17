@@ -50,6 +50,21 @@ export const Wrapper = styled.div`
     font-weight: normal;
   }
 
+  table th:last-child,
+  table td:last-child {
+    width: 50px;
+  }
+
+  table td:last-child {
+    padding: auto 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+
+    cursor: pointer;
+  }
+
   table th {
     background-color: var(--primary);
     color: white;
