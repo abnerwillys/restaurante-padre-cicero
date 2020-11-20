@@ -19,7 +19,7 @@ function HeaderLanding() {
             <br />
             Padre Cicero
           </h1>
-          <em>-mais de 30 de tradição-</em>
+          <em>-mais de 30 anos de tradição-</em>
         </div>
       </LogoStyle>
 

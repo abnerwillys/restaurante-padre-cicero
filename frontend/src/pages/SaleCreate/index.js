@@ -129,6 +129,7 @@ function SaleCreate() {
       productItems,
     };
     saveNewSale(newSale);
+    alert('Venda criada com sucesso!')
   }
 
   return (

@@ -32,6 +32,7 @@ function ProductRegister() {
     }
 
     saveNewProduct(newProduct)
+    alert('Produto cadastrado com sucesso!')
   }
 
   return (
