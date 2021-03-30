@@ -48,8 +48,6 @@ O **Restaurante Padre Cicero** é um sistema de controle de vendas e produtos.
 
 Um projeto fullstack, desenvolvido em cima de uma API Rest com Node.JS / MongoDb e Front end web com ReactJS.
 
-Este projeto foi realizado como desafio técnico para a empresa **TON Stone**.
-
 ---
 #### 💻 FrontEnd
 
@@ -79,7 +77,6 @@ Este projeto foi realizado como desafio técnico para a empresa **TON Stone**.
  - [ ] 👨‍💻 Melhorar responsividade da aplicação;
  - [ ] 👨‍💻 Finalizar CRUD de *produtos*(PUT/DELETE);
  - [ ] 👨‍💻 Finalizar CRUD de *vendas*(PUT/DELETE);
- - [ ] 
  - [ ] 👨‍💻 Implementação de Temas;
  - [ ] 👨‍💻 Implementação de CRUD de *clientes*;
  - [ ] 👨‍💻 Implementação de CRUD de *colaboradores*;
